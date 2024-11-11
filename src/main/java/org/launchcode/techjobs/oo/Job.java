@@ -48,10 +48,10 @@ public class Job {
     @Override
     public String toString(){
         String nameValue = this.name != null ? this.name : "Data not available";
-        String employerValue = this.employer != null && this.employer.getValue() != null ? this.employer.getValue() : "Data not available";
-        String locationValue = this.location != null && this.location .getValue() != null ? this.location.getValue() : "Data not available";
-        String positionTypeValue = this.positionType != null && this.positionType.getValue() != null ? this.positionType.getValue() : "Data not available";
-        String coreCompetencyValue = this.coreCompetency != null && this.coreCompetency.getValue() != null ? this.coreCompetency.getValue() : "Data not available";
+        String employerValue = (this.employer != null && this.getEmployer().getValue() != "") ? this.getEmployer().getValue() : "Data not available";
+        String locationValue = (this.location != null && this.getLocation().getValue() != "") ? this.getLocation().getValue() : "Data not available";
+        String positionTypeValue = (this.positionType != null && this.getPositionType().getValue() != "") ? this.getPositionType().getValue() : "Data not available";
+        String coreCompetencyValue = (this.coreCompetency != null && this.getCoreCompetency().getValue() != "") ? this.getCoreCompetency().getValue() : "Data not available";
 
         return "ID: "+ this.id + System.lineSeparator() +
                 "Name: " + nameValue + System.lineSeparator() +
