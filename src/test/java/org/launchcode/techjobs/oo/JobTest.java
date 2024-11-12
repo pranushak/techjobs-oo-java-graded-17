@@ -34,7 +34,7 @@ public class JobTest {
         Job job = new Job();
         String actual = job.toString();
         System.out.println(actual);
-        String expected = "ID: "+ job.getId() + System.lineSeparator() +
+        String expected = System.lineSeparator() + "ID: "+ job.getId() + System.lineSeparator() +
                 "Name: Data not available" + System.lineSeparator() +
                 "Employer: Data not available" + System.lineSeparator() +
                 "Location: Data not available" + System.lineSeparator() +
@@ -46,7 +46,7 @@ public class JobTest {
     public void testToStringContainsCorrectLabelsAndData(){
         Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
         String actual=job.toString();
-        String expected = "ID: " + job.getId() + System.lineSeparator() +
+        String expected = System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() +
                 "Name: " + job.getName() + System.lineSeparator() +
                 "Employer: " + job.getEmployer() + System.lineSeparator() +
                 "Location: "+ job.getLocation() + System.lineSeparator() +
@@ -59,7 +59,7 @@ public class JobTest {
     public void testToStringHandlesEmptyField(){
         Job job = new Job();
         String actual = job.toString();
-        String expected = "ID: " + job.getId() + System.lineSeparator() +
+        String expected = System.lineSeparator() + "ID: " + job.getId() + System.lineSeparator() +
                 "Name: " +  "Data not available" + System.lineSeparator() +
                 "Employer: " + "Data not available" + System.lineSeparator() +
                 "Location: "+ "Data not available" + System.lineSeparator() +

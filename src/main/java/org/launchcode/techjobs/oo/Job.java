@@ -53,7 +53,7 @@ public class Job {
         String positionTypeValue = (this.positionType != null && this.getPositionType().getValue() != "") ? this.getPositionType().getValue() : "Data not available";
         String coreCompetencyValue = (this.coreCompetency != null && this.getCoreCompetency().getValue() != "") ? this.getCoreCompetency().getValue() : "Data not available";
 
-        return "ID: "+ this.id + System.lineSeparator() +
+        return System.lineSeparator() + "ID: "+ this.id + System.lineSeparator() +
                 "Name: " + nameValue + System.lineSeparator() +
                 "Employer: " + employerValue + System.lineSeparator() +
                 "Location: " + locationValue + System.lineSeparator() +
