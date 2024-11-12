@@ -32,9 +32,7 @@ public abstract class JobField {
     public int hashCode() {
         return Objects.hash(getId());
     }
-
-    // Getters and Setters:
-
+ 
     public int getId() {
         return id;
     }
