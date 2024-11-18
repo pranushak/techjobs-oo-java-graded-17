@@ -4,7 +4,7 @@ import org.junit.Test;
 import static org.testng.Assert.*;
 
 public class JobTest {
-    //TODO: Create your unit tests here
+
     @Test
     public void testSettingJobId(){
         Job job = new Job();
@@ -42,6 +42,7 @@ public class JobTest {
                 "Core Competency: Data not available" + System.lineSeparator();
         assertEquals(actual,expected);
     }
+    
     @Test
     public void testToStringContainsCorrectLabelsAndData(){
         Job job = new Job("Product tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
